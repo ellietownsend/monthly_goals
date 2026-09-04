@@ -1,0 +1,8 @@
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid #362C23;
+    width: 500px;
+    background-color: #EBECD6;
+}
