@@ -1,8 +1,154 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
 #hero {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 5px solid #362C23;
-    width: 500px;
-    background-color: #EBECD6;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  background-color: #faf8f2;
+  color: #362c23;
+  padding: 10px;
+  width: 300px;
+}
+
+#header {
+  margin-bottom: 8px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-left: 19px;
+  letter-spacing: -0.5px;
+  color: #362c23;
+}
+
+#card {
+  padding: 15px;
+  background-color: #fffefa;
+  border: 1px solid #e8e2d7;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(54, 44, 35, 0.08);
+}
+
+.goal-content h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #51463c;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form label {
+  margin-bottom: 2px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #51463c;
+}
+
+form input {
+  width: 100%;
+  padding: 10px 12px;
+  box-sizing: border-box;
+
+  border: 2px solid transparent;
+  border-radius: 12px;
+
+  background-color: #f4efe4;
+  color: #362c23;
+
+  font-size: .9rem;
+  font-family: inherit;
+
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+form input::placeholder {
+  color: #9b9287;
+}
+
+form input:focus {
+  background-color: #fff;
+  border-color: #b8cdb5;
+  box-shadow: 0 0 0 3px rgba(184, 205, 181, 0.25);
+}
+
+form button {
+  margin-top: 8px;
+  padding: 10px;
+
+  border: none;
+  border-radius: 12px;
+
+  background-color: #b8cdb5;
+  color: #2f3a2c;
+
+  font-size: .9rem;
+  font-weight: 700;
+  font-family: inherit;
+
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+form button:hover {
+  background-color: #a7c0a4;
+}
+
+form button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Error message */
+.goal-error {
+  margin-top: 20px;
+  padding: 14px 16px;
+
+  background-color: #f8dddd;
+  border: 1px solid #edc2c2;
+  border-radius: 12px;
+
+  color: #754444;
+}
+
+.goal-error p {
+  margin: 0;
+}
+
+/* Confirmation */
+.goal-confirmation {
+  margin-top: 28px;
+  padding: 22px;
+
+  background-color: #e5f0df;
+  border: 1px solid #c8ddc1;
+  border-radius: 16px;
+}
+
+.goal-confirmation h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  color: #40583b;
+}
+
+.goal-confirmation > p {
+  color: #5e6858;
+}
+
+.goal-text {
+  margin: 10px 0;
+  padding: 12px 14px;
+
+  background-color: #fffefa;
+  border-radius: 10px;
+
+  color: #362c23;
+  box-shadow: 0 2px 8px rgba(54, 44, 35, 0.05);
 }
